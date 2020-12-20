@@ -19,9 +19,12 @@ Login as a patient to view logs updated timely by hospital staff.
   <img src="./snaps/homepage.PNG" alt="Home Page" width="500">
 </p>
 
-
 With detailed logs provided as soon as they are updated by the hospital staff, we can forget traditional pen-and-paper logs and embrace technology in the field.
 
 <p align="center">
   <img src="./snaps/viewlogs.PNG" alt="Detailed Logs" width="650">
+</p>
+
+<p align="center">
+  <img src="./snaps/current log.PNG" alt="Detailed Logs" width="650">
 </p>
