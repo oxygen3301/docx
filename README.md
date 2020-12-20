@@ -10,16 +10,15 @@ DocX is an all in one solution to track your loved ones from any hospitals 24/7,
  * Check **detailed hospital bills** and pay them
 
 <p align="center">
-  <img src="./snaps/homepage.PNG" alt="Home Page" width="738">
+  <img src="./DOCX.png" alt="Home Page" width="738">
 </p>
 
 ## How it Works
 Login as a patient to view logs updated timely by hospital staff.
 <p align="center">
-<img src="./snaps/banner.PNG"
-  alt="Banner"
-  width="686" height="289">
+  <img src="./snaps/homepage.PNG" alt="Home Page" width="738">
 </p>
+
 
 With detailed logs provided as soon as they are updated by the hospital staff, we can forget traditional pen-and-paper logs and embrace technology in the field.
 
