@@ -36,11 +36,13 @@ Hospitals can accesss their own admin panel and add logs for the patients regist
 </p>
 
 ## How its Built
+<img src="https://cdn.iconscout.com/icon/free/png-512/django-12-1175186.png" align="right"
+     alt="DocX logo" width="178" height="178">
 
 The project was built using [Django](https://www.djangoproject.com/), which was used to handle
 - User Authentication
 - Site Navigation
 - Database for storing user data
 
-The website was designed using HTML and CSS. We used a bootstrap theme which you can find here:
-`https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/`
+The website was designed using HTML and CSS. We used a bootstrap theme which you can find [here](https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/):
+
