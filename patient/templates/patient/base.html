@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DocX - Virtual Hospital</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'patient/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'patient/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'patient/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'patient/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'patient/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'patient/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'patient/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'patient/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'patient/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'patient/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'patient/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab - v2.1.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="{% url 'home' %}">DocX</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+            {% if user.is_authenticated %}
+                {% if user.username  == "medica01" %}
+                    <li><a href="{% url 'createlog' %}">Create Log</a></li>
+                    <li><a>Logged in as {{ user }}</a></li>
+                    <li><a href="#" onclick="$('#signOutBtn').click()" class="nav-link">Logout</a>
+                        <form style='display: none;' method="POST" action="{% url 'logoutuser' %}">
+                            {% csrf_token %}
+                            <button id="signOutBtn" type="submit">Logout</button>
+                        </form></li>
+                {% else %}
+                    <li><a href="{% url 'viewlogs' %}">View Logs</a></li>
+                    <li><a>Logged in as {{ user }}</a></li>
+                    <li><a href="#" onclick="$('#signOutBtn').click()" class="nav-link">Logout</a>
+                        <form style='display: none;' method="POST" action="{% url 'logoutuser' %}">
+                            {% csrf_token %}
+                            <button id="signOutBtn" type="submit">Logout</button>
+                        </form></li>
+                    {% endif %}
+            {% else %}
+            <li><a href="#appointment">Nearby Doctors</a></li>
+            <li><a href="{% url 'loginhospital' %}">Login as Hospital</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="{% url 'loginuser' %}" class="appointment-btn scrollto">Patient Login</a>
+      {% endif %}
+    </div>
+  </header><!-- End Header -->
+
+  <div class="container">
+    {% block content %}{% endblock %}
+    </div>
+    

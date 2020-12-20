@@ -1,0 +1,66 @@
+
+
+
+
+
+
+{% extends "patient/base.html" %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2><b>CURRENT LOG</b></h2>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+<dl class="row">
+    <dt class="col-sm-3">Time of Log:</dt>
+  <dd class="col-sm-9"><b>{{ log.added }}</b></dd>
+  <dt class="col-sm-3">Temperature:</dt>
+  <dd class="col-sm-9"><b>{{ log.temperature }}</b>° F</dd>
+
+  <dt class="col-sm-3">Blood Pressure:</dt>
+  <dd class="col-sm-9">
+   <b>{{ log.bp }}</b> mm Hg
+  </dd>
+
+  <dt class="col-sm-3">Oxygen Saturation:</dt>
+  <dd class="col-sm-9"><b>{{ log.oxygen_saturation }}</b>%</dd>
+
+  <dt class="col-sm-3 text-truncate">Pulse:</dt>
+  <dd class="col-sm-9"><b>{{ log.pulse }}</b> Beats per minute</dd>
+
+  <dt class="col-sm-3 text-truncate">Respiratory Rate:</dt>
+  <dd class="col-sm-9"><b>{{ log.respiratory_rate }}</b> Breaths per minute</dd>
+
+  <dt class="col-sm-3">Doctor's Comment</dt>
+  <dd class="col-sm-9">
+      {{ log.doctor_comment}}</dd>
+</dl>
+    <!-- <div class="row justify-content-center mt-5">
+        <div class="col-md-5">
+            <h2>Viewing Log</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5">
+            {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endif %}
+            <p> Time of Log: <b>{{ log.added }}</b></p>
+                <p>Temperature: <b>{{ log.temperature }}</b>° F</p>
+                <p>Blood Pressure: <b>{{ log.bp }}</b> mm Hg</p>
+                <p>Oxygen Saturation: <b>{{ log.oxygen_saturation }}</b>%</p>
+                <p>Pulse: <b>{{ log.pulse }}</b> Beats per minute</p>
+                <p>Respiratory Rate: <b>{{ log.respiratory_rate }}</b> Breaths per minute</p>
+                <p>Doctor's Comment: : <b>{{ log.doctor_comment }}</b></p>
+
+
+        </div>
+    </div> -->
+
+{% endblock %}

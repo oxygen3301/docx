@@ -1,0 +1,30 @@
+{% extends "patient/base.html" %}
+
+{% block content %}
+<body>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10">
+            <h1>Current Logs</h1>
+            <br>
+        {% if logs %}
+            <div class="list-group">
+                {% for log in logs %}
+                    <a href="{% url 'viewlog' log.id %}" class="list-group-item list-group-item-success">Temperature: <b>{{ log.temperature }}...</b> <a>-    Date Added: {{ log.added }}</a> </a>
+                    <br>
+                    {% endfor %}
+            </div>
+        {% else %}
+            <div class="text-center">
+                <h2>Looks like you don't have any logs! You're dead.</h2>
+            <br>
+            </div>
+        {% endif %}
+        </div>
+    </div>
+</body>
+{% endblock %}
