@@ -32,5 +32,15 @@ With detailed logs provided as soon as they are updated by the hospital staff, w
 Hospitals can accesss their own admin panel and add logs for the patients registered, with detailed information. The form can be editted in the future for adding even more information.
 
 <p align="center">
-  <img src="./snaps/createlog.PNG" alt="Detailed Logs" width="650">
+  <img src="./snaps/createlog.PNG" alt="Detailed Logs" width="400">
 </p>
+
+## How its Built
+
+The project was built using [Django](https://www.djangoproject.com/), which was used to handle
+- User Authentication
+- Site Navigation
+- Database for storing user data
+
+The website was designed using HTML and CSS. We used a bootstrap theme which you can find here:
+`https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/`
