@@ -1,6 +1,6 @@
 # DocX - HackUMass
 <img src="./snaps/logo.png" align="right"
-     alt="DocX logo" width="120" height="178">
+     alt="DocX logo" width="178" height="178">
 
 DocX is an all in one solution to track your loved ones from any hospitals 24/7, It provides you transparency and helps you to monitor your loved ones without any 'visiting hours' hurdle!
 
