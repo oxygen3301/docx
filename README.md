@@ -37,7 +37,7 @@ Hospitals can accesss their own admin panel and add logs for the patients regist
 
 ## How its Built
 <img src="https://cdn.iconscout.com/icon/free/png-512/django-12-1175186.png" align="right"
-     alt="Django logo">
+     alt="Django logo" width="178">
 
 The project was built using [Django](https://www.djangoproject.com/), which was used to handle
 - User Authentication
@@ -51,6 +51,7 @@ The website was designed using HTML and CSS. We used a bootstrap theme which you
 1. Clone/Download the project.
 
 2. Install Django on your system by running the following command in your command line. (Make sure Python is installed: [Link](https://www.python.org/downloads/))
+
 `pip install django`
 
 3. Move to the project folder and run the following commands:
@@ -60,4 +61,17 @@ py manage.py migrate
 py manage.py runserver
 ```
 4. Now open the following URL on your browser
+
 `http://127.0.0.1:8000/`
+
+## Whats coming next?
+- Add support for live data reflected from the various equipment at the hospital
+- Add bills - So that patients/relatives can check the detailed description for the various daily expenses with full transparency
+- Improve the UI of the webapp
+
+### Note
+This is a project for the ***HackUMass VIII*** Hackathon. 
+
+#### Team Members
+- Rohitashwa Pareek
+- Shreevardhan Shah
