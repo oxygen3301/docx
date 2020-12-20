@@ -1,3 +1,4 @@
+![developer](https://img.shields.io/badge/Documented%20by-Rohitashwa%20Pareek-green)
 # DocX - HackUMass
 <img src="./snaps/logo.png" align="right"
      alt="DocX logo" width="178" height="178">
@@ -51,8 +52,9 @@ The website was designed using HTML and CSS. We used a bootstrap theme which you
 1. Clone/Download the project.
 
 2. Install Django on your system by running the following command in your command line. (Make sure Python is installed: [Link](https://www.python.org/downloads/))
-
-`pip install django`
+```
+pip install django
+```
 
 3. Move to the project folder and run the following commands:
 ```
@@ -61,13 +63,15 @@ py manage.py migrate
 py manage.py runserver
 ```
 4. Now open the following URL on your browser
-
-`http://127.0.0.1:8000/`
-
+```
+http://127.0.0.1:8000/
+```
 ## Whats coming next?
 - Add support for live data reflected from the various equipment at the hospital
 - Add bills - So that patients/relatives can check the detailed description for the various daily expenses with full transparency
 - Improve the UI of the webapp
+
+---
 
 ### Note
 This is a project for the ***HackUMass VIII*** Hackathon. 
@@ -75,3 +79,5 @@ This is a project for the ***HackUMass VIII*** Hackathon.
 #### Team Members
 - Rohitashwa Pareek
 - Shreevardhan Shah
+
+---
