@@ -13,7 +13,7 @@ DocX is an all in one solution to track your loved ones from any hospitals 24/7,
   <img src="./DOCX.png " alt="Home Page" width="500">
 </p>
 
-## How it Works
+## Inside the Webapp
 Login as a patient to view logs updated timely by hospital staff.
 <p align="center">
   <img src="./snaps/homepage.PNG" alt="Home Page" width="500">
@@ -26,5 +26,11 @@ With detailed logs provided as soon as they are updated by the hospital staff, w
 </p>
 
 <p align="center">
-  <img src="./snaps/current log.PNG" alt="Detailed Logs" width="650">
+  <img src="./snaps/currentlog.PNG" alt="Detailed Logs" width="650">
+</p>
+
+Hospitals can accesss their own admin panel and add logs for the patients registered, with detailed information. The form can be editted in the future for adding even more information.
+
+<p align="center">
+  <img src="./snaps/createlog.PNG" alt="Detailed Logs" width="650">
 </p>
