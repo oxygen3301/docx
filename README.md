@@ -1,4 +1,3 @@
-![developer](https://img.shields.io/badge/Documented%20by-Rohitashwa%20Pareek-green)
 # DocX - HackUMass
 <img src="./snaps/logo.png" align="right"
      alt="DocX logo" width="178" height="178">
